@@ -25,7 +25,9 @@ This repository documents my structured solutions to **LeetCode Pandas** and dat
 
 | # | Problem | Difficulty | Core Topics & Methods | Solution |
 | :---: | :--- | :---: | :--- | :---: |
-| 0595 | [Big Countries](https://leetcode.com/problems/big-countries/) | Easy | Boolean Masking, `.loc[]`, Column Projection | [0595_big_countries.py](./0595_big_countries.py) |
+| 01 | [Big Countries](https://leetcode.com/problems/big-countries/) | Easy | Boolean Masking, `.loc[]`, Column Projection | [LEET-01 — Big Countries.py](./LEET-01%20%E2%80%94%20Big%20Countries.py) |
+| 02 | [Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/) | Easy | Multiple Conditions (`&`), Boolean Indexing | [LEET-02 — Recyclable and Low Fat Products.py](./LEET-02%20%E2%80%94%20Recyclable%20and%20Low%20Fat%20Products.py) |
+| 03 | [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/) | Easy | Membership Testing (`.isin()`), Bitwise NOT (`~`), `.rename()` | [LEET-03 — Customers Who Never Order.py](./LEET-03%20%E2%80%94%20Customers%20Who%20Never%20Order.py) |
 
 *More challenges are added continuously as I work through the LeetCode curriculum.*
 
@@ -59,7 +61,9 @@ This repository documents my structured solutions to **LeetCode Pandas** and dat
 ```text
 .
 ├── README.md
-├── 0595_big_countries.py
+├── LEET-01 — Big Countries.py
+├── LEET-02 — Recyclable and Low Fat Products.py
+├── LEET-03 — Customers Who Never Order.py
 └── ...
 ```
 
@@ -87,7 +91,7 @@ pip install pandas
 Execute any solution directly using Python:
 
 ```bash
-python 0595_big_countries.py
+python "LEET-03 — Customers Who Never Order.py"
 ```
 
 ---
