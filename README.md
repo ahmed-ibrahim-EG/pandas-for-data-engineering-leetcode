@@ -14,15 +14,13 @@
 
 ## 📖 Overview
 
-This repository documents my structured solutions to **LeetCode Pandas** and data manipulation challenges.
+This repository documents my structured solutions to **LeetCode Pandas** and data manipulation challenges. The primary focus is writing clean, idiomatic Pandas code with an emphasis on:
 
-The primary focus is writing clean, idiomatic Pandas code with an emphasis on:
-
-* **Vectorized Operations:** Avoiding unnecessary loops and leveraging Pandas operations.
+* **Vectorized Operations:** Avoiding unnecessary loops and leveraging Pandas-native operations.
 * **Boolean Masking:** Filtering DataFrames using clear and composable conditions.
-* **Explicit Indexing:** Clean row and column selection with `.loc[]`.
+* **Explicit Indexing:** Clean row and column selection using `.loc[]`.
 * **Data Transformation:** Renaming, deduplicating, sorting, and creating derived columns.
-* **Data Engineering Relevance:** Practicing patterns commonly used in real-world data manipulation and transformation workflows.
+* **Data Engineering Relevance:** Practicing practical data manipulation patterns used in ETL and data transformation workflows.
 
 ---
 
@@ -32,10 +30,10 @@ The primary focus is writing clean, idiomatic Pandas code with an emphasis on:
 | :-: | :------------------------------------------------------------------------------------------------ | :--------: | :----------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
 |  01 | [Big Countries](https://leetcode.com/problems/big-countries/)                                     |    Easy    | Boolean Masking, `.loc[]`, Column Projection                                   | [LEET-01 — Big Countries.py](./LEET-01%20%E2%80%94%20Big%20Countries.py)                                           |
 |  02 | [Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/) |    Easy    | Multiple Conditions (`&`), Boolean Indexing                                    | [LEET-02 — Recyclable and Low Fat Products.py](./LEET-02%20%E2%80%94%20Recyclable%20and%20Low%20Fat%20Products.py) |
-|  03 | [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)             |    Easy    | Membership Testing (`.isin()`), Bitwise NOT (`~`), `.loc[]`, `.rename()`       | [LEET-03 — Customers Who Never Order.py](./LEET-03%20%E2%80%94%20Customers%20Who%20Never%20Order.py)               |
-|  04 | [Article Views I](https://leetcode.com/problems/article-views-i/)                                 |    Easy    | Boolean Masking, `.loc[]`, `.drop_duplicates()`, `.rename()`, `.sort_values()` | [LEET-04 — Article Views I.py](./LEET-04%20%E2%80%94%20Article%20Views I.py)                                       |
+|  03 | [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)             |    Easy    | Membership Testing (`.isin()`), Bitwise NOT (`~`), `.loc[]`, `.rename()`       | [LEET-03 — Customers Who Never Order.py](./LEET-03%20%E2%80%94%20Customers Who Never Order.py)                     |
+|  04 | [Article Views I](https://leetcode.com/problems/article-views-i/)                                 |    Easy    | Boolean Masking, `.loc[]`, `.drop_duplicates()`, `.rename()`, `.sort_values()` | [LEET-04 — Article Views I.py](./LEET-04%20%E2%80%94%20Article Views I.py)                                         |
 |  05 | [Invalid Tweets](https://leetcode.com/problems/invalid-tweets/)                                   |    Easy    | String Operations, `.str.len()`, Boolean Masking, `.loc[]`                     | [LEET-05 — Invalid Tweets.py](./LEET-05%20%E2%80%94%20Invalid Tweets.py)                                           |
-|  06 | [Calculate Special Bonus](https://leetcode.com/problems/calculate-special-bonus/)                 |    Easy    | Boolean Masking, `.str.startswith()`, Modulo, `.where()`, Sorting              | [LEET-06 — Calculate Special Bonus.py](./LEET-06%20%E2%80%94%20Calculate Special Bonus.py)                         |
+|  06 | [Calculate Special Bonus](https://leetcode.com/problems/calculate-special-bonus/)                 |    Easy    | Boolean Masking, `.str.startswith()`, Modulo, `.where()`, `.sort_values()`     | [LEET-06 — Calculate Special Bonus.py](./LEET-06%20%E2%80%94%20Calculate Special Bonus.py)                         |
 
 **Progress: 6 / 50 — 12%**
 
@@ -72,7 +70,7 @@ The primary focus is writing clean, idiomatic Pandas code with an emphasis on:
 * Boolean Mask → Filter → Transform → Select.
 * Vectorized conditional transformations.
 * Selecting only the columns required by the problem.
-* Preserving clean and readable DataFrame workflows.
+* Building readable and maintainable DataFrame workflows.
 
 ---
 
@@ -133,7 +131,7 @@ It is to build practical familiarity with **Pandas data manipulation patterns** 
 * Data Validation
 * Data Engineering Workflows
 
-The focus is on understanding **why and when** to use each Pandas operation rather than only memorizing syntax.
+The focus is on understanding **why and when** to use each Pandas operation rather than simply memorizing syntax.
 
 ---
 
