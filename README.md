@@ -4,9 +4,9 @@
 
 **Clean, Vectorized, and Documented Data Manipulation Solutions**
 
-[![GitHub](https://img.shields.io/badge/GitHub-ahmed--ibrahim--EG-181717?style=for-the-badge&logo=github)](https://github.com/ahmed-ibrahim-EG)
-[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Pandas](https://img.shields.io/badge/pandas-Data%20Engineering-150458?style=for-the-badge&logo=pandas)](https://pandas.pydata.org/)
+[![GitHub](https://img.shields.io/badge/GitHub-ahmed--ibrahim--EG-181717?style=for-the-badge\&logo=github)](https://github.com/ahmed-ibrahim-EG)
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge\&logo=python\&logoColor=white)](https://www.python.org/)
+[![Pandas](https://img.shields.io/badge/pandas-Data%20Engineering-150458?style=for-the-badge\&logo=pandas)](https://pandas.pydata.org/)
 
 </div>
 
@@ -14,45 +14,65 @@
 
 ## 📖 Overview
 
-This repository documents my structured solutions to **LeetCode Pandas** and data manipulation challenges. The primary focus is writing idiomatic, high-performance Pandas code emphasizing:
-- **Vectorized Operations:** Avoiding slow loops and leveraging C-backed Pandas routines.
-- **Explicit Indexing:** Clean row and column projections via `.loc[]` and `.iloc[]`.
-- **Memory & Readability:** Production-ready transformations suited for data pipelines and data engineering tasks.
+This repository documents my structured solutions to **LeetCode Pandas** and data manipulation challenges.
+
+The primary focus is writing clean, idiomatic Pandas code with an emphasis on:
+
+* **Vectorized Operations:** Avoiding unnecessary loops and leveraging Pandas operations.
+* **Boolean Masking:** Filtering DataFrames using clear and composable conditions.
+* **Explicit Indexing:** Clean row and column selection with `.loc[]`.
+* **Data Transformation:** Renaming, deduplicating, sorting, and creating derived columns.
+* **Data Engineering Relevance:** Practicing patterns commonly used in real-world data manipulation and transformation workflows.
 
 ---
 
 ## 📊 Study Plan Progress
 
-| # | Problem | Difficulty | Core Topics & Methods | Solution |
-| :---: | :--- | :---: | :--- | :---: |
-| 01 | [Big Countries](https://leetcode.com/problems/big-countries/) | Easy | Boolean Masking, `.loc[]`, Column Projection | [LEET-01 — Big Countries.py](./LEET-01%20%E2%80%94%20Big%20Countries.py) |
-| 02 | [Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/) | Easy | Multiple Conditions (`&`), Boolean Indexing | [LEET-02 — Recyclable and Low Fat Products.py](./LEET-02%20%E2%80%94%20Recyclable%20and%20Low%20Fat%20Products.py) |
-| 03 | [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/) | Easy | Membership Testing (`.isin()`), Bitwise NOT (`~`), `.rename()` | [LEET-03 — Customers Who Never Order.py](./LEET-03%20%E2%80%94%20Customers%20Who%20Never%20Order.py) |
+|  #  | Problem                                                                                           | Difficulty | Core Topics & Methods                                                          | Solution                                                                                                           |
+| :-: | :------------------------------------------------------------------------------------------------ | :--------: | :----------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
+|  01 | [Big Countries](https://leetcode.com/problems/big-countries/)                                     |    Easy    | Boolean Masking, `.loc[]`, Column Projection                                   | [LEET-01 — Big Countries.py](./LEET-01%20%E2%80%94%20Big%20Countries.py)                                           |
+|  02 | [Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/) |    Easy    | Multiple Conditions (`&`), Boolean Indexing                                    | [LEET-02 — Recyclable and Low Fat Products.py](./LEET-02%20%E2%80%94%20Recyclable%20and%20Low%20Fat%20Products.py) |
+|  03 | [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)             |    Easy    | Membership Testing (`.isin()`), Bitwise NOT (`~`), `.loc[]`, `.rename()`       | [LEET-03 — Customers Who Never Order.py](./LEET-03%20%E2%80%94%20Customers%20Who%20Never%20Order.py)               |
+|  04 | [Article Views I](https://leetcode.com/problems/article-views-i/)                                 |    Easy    | Boolean Masking, `.loc[]`, `.drop_duplicates()`, `.rename()`, `.sort_values()` | [LEET-04 — Article Views I.py](./LEET-04%20%E2%80%94%20Article%20Views I.py)                                       |
+|  05 | [Invalid Tweets](https://leetcode.com/problems/invalid-tweets/)                                   |    Easy    | String Operations, `.str.len()`, Boolean Masking, `.loc[]`                     | [LEET-05 — Invalid Tweets.py](./LEET-05%20%E2%80%94%20Invalid Tweets.py)                                           |
+|  06 | [Calculate Special Bonus](https://leetcode.com/problems/calculate-special-bonus/)                 |    Easy    | Boolean Masking, `.str.startswith()`, Modulo, `.where()`, Sorting              | [LEET-06 — Calculate Special Bonus.py](./LEET-06%20%E2%80%94%20Calculate Special Bonus.py)                         |
 
-*More challenges are added continuously as I work through the LeetCode curriculum.*
+**Progress: 6 / 50 — 12%**
+
+*More challenges are added continuously as I work through the LeetCode Pandas curriculum.*
 
 ---
 
 ## 🧠 Key Pandas Concepts Covered
 
 ### 1. Data Filtering & Selection
-- Conditional row filtering with logical operators (`&`, `|`, `~`).
-- Explicit row/column slicing with `df.loc[mask, ['col1', 'col2']]`.
-- Value membership checks via `.isin()` and pattern matching with `.str.contains()`.
 
-### 2. Aggregation & Grouping
-- Split-Apply-Combine patterns using `groupby()` and `.agg()`.
-- Cumulative calculations (`cumsum()`, `cummax()`).
-- Rank calculations with `rank(method='dense')`.
+* Conditional row filtering with Boolean masks.
+* Combining multiple conditions using `&`, `|`, and `~`.
+* Explicit row and column selection with `.loc[]`.
+* Column projection using lists of column names.
+* Membership testing with `.isin()`.
 
-### 3. Data Transformation & Cleaning
-- Handling missing data with `fillna()` and `dropna()`.
-- Deduplication using `drop_duplicates()`.
-- Modifying and casting column schemas (`astype()`, `rename()`).
+### 2. String Operations
 
-### 4. Merging & Reshaping
-- Joins using `pd.merge()` (inner, left, right, outer).
-- Reshaping structures via `pivot()`, `pivot_table()`, and `melt()`.
+* Measuring string length with `.str.len()`.
+* Prefix matching with `.str.startswith()`.
+* Applying vectorized string operations directly to Series.
+
+### 3. Data Transformation
+
+* Creating derived columns.
+* Conditional value assignment using `.where()`.
+* Renaming columns with `.rename()`.
+* Removing duplicate rows with `.drop_duplicates()`.
+* Sorting results with `.sort_values()`.
+
+### 4. Basic Data Manipulation Patterns
+
+* Boolean Mask → Filter → Transform → Select.
+* Vectorized conditional transformations.
+* Selecting only the columns required by the problem.
+* Preserving clean and readable DataFrame workflows.
 
 ---
 
@@ -64,13 +84,18 @@ This repository documents my structured solutions to **LeetCode Pandas** and dat
 ├── LEET-01 — Big Countries.py
 ├── LEET-02 — Recyclable and Low Fat Products.py
 ├── LEET-03 — Customers Who Never Order.py
+├── LEET-04 — Article Views I.py
+├── LEET-05 — Invalid Tweets.py
+├── LEET-06 — Calculate Special Bonus.py
 └── ...
 ```
 
-Each solution script is structured as:
-1. **Type-Annotated Function:** Matches the LeetCode runtime signature.
-2. **Docstring:** Summarizes the problem constraints and logic.
-3. **Local Test Harness:** Standalone executable block (`if __name__ == '__main__':`) with sample inputs for quick local verification.
+Each solution script follows a consistent structure:
+
+1. **Type-Annotated Function:** Matches the LeetCode Pandas runtime signature.
+2. **Docstring:** Describes the problem criteria and expected output.
+3. **Boolean / Vectorized Logic:** Uses Pandas-native operations instead of unnecessary loops.
+4. **Clean Output:** Returns only the required columns in the required format.
 
 ---
 
@@ -91,11 +116,27 @@ pip install pandas
 Execute any solution directly using Python:
 
 ```bash
-python "LEET-03 — Customers Who Never Order.py"
+python "LEET-06 — Calculate Special Bonus.py"
 ```
+
+---
+
+## 🎯 Learning Goal
+
+The goal of this repository is not simply to solve LeetCode problems.
+
+It is to build practical familiarity with **Pandas data manipulation patterns** that are useful in:
+
+* Data Cleaning
+* Data Transformation
+* ETL Pipelines
+* Data Validation
+* Data Engineering Workflows
+
+The focus is on understanding **why and when** to use each Pandas operation rather than only memorizing syntax.
 
 ---
 
 ## 👤 Author
 
-- **GitHub:** [@ahmed-ibrahim-EG](https://github.com/ahmed-ibrahim-EG)
+* **GitHub:** [@ahmed-ibrahim-EG](https://github.com/ahmed-ibrahim-EG)
