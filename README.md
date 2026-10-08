@@ -14,7 +14,9 @@
 
 ## 📖 Overview
 
-This repository documents my structured solutions to **LeetCode Pandas** and data manipulation challenges. The primary focus is writing clean, idiomatic Pandas code with an emphasis on:
+This repository documents my structured solutions to **LeetCode Pandas** and data manipulation challenges.
+
+The primary focus is writing clean, idiomatic Pandas code with an emphasis on:
 
 * **Vectorized Operations:** Avoiding unnecessary loops and leveraging Pandas-native operations.
 * **Boolean Masking:** Filtering DataFrames using clear and composable conditions.
@@ -26,14 +28,14 @@ This repository documents my structured solutions to **LeetCode Pandas** and dat
 
 ## 📊 Study Plan Progress
 
-|  #  | Problem                                                                                           | Difficulty | Core Topics & Methods                                                          | Solution                                                                                                           |
-| :-: | :------------------------------------------------------------------------------------------------ | :--------: | :----------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
-|  01 | [Big Countries](https://leetcode.com/problems/big-countries/)                                     |    Easy    | Boolean Masking, `.loc[]`, Column Projection                                   | [LEET-01 — Big Countries.py](./LEET-01%20%E2%80%94%20Big%20Countries.py)                                           |
-|  02 | [Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/) |    Easy    | Multiple Conditions (`&`), Boolean Indexing                                    | [LEET-02 — Recyclable and Low Fat Products.py](./LEET-02%20%E2%80%94%20Recyclable%20and%20Low%20Fat%20Products.py) |
-|  03 | [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)             |    Easy    | Membership Testing (`.isin()`), Bitwise NOT (`~`), `.loc[]`, `.rename()`       | [LEET-03 — Customers Who Never Order.py](./LEET-03%20%E2%80%94%20Customers Who Never Order.py)                     |
-|  04 | [Article Views I](https://leetcode.com/problems/article-views-i/)                                 |    Easy    | Boolean Masking, `.loc[]`, `.drop_duplicates()`, `.rename()`, `.sort_values()` | [LEET-04 — Article Views I.py](./LEET-04%20%E2%80%94%20Article Views I.py)                                         |
-|  05 | [Invalid Tweets](https://leetcode.com/problems/invalid-tweets/)                                   |    Easy    | String Operations, `.str.len()`, Boolean Masking, `.loc[]`                     | [LEET-05 — Invalid Tweets.py](./LEET-05%20%E2%80%94%20Invalid Tweets.py)                                           |
-|  06 | [Calculate Special Bonus](https://leetcode.com/problems/calculate-special-bonus/)                 |    Easy    | Boolean Masking, `.str.startswith()`, Modulo, `.where()`, `.sort_values()`     | [LEET-06 — Calculate Special Bonus.py](./LEET-06%20%E2%80%94%20Calculate Special Bonus.py)                         |
+|  #  | Problem                                                                                           | Difficulty | Core Topics & Methods                                                          | Solution                                                                                     |
+| :-: | :------------------------------------------------------------------------------------------------ | :--------: | :----------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
+|  01 | [Big Countries](https://leetcode.com/problems/big-countries/)                                     |    Easy    | Boolean Masking, `.loc[]`, Column Projection                                   | [LEET-01 — Big Countries.py](./LEET-01-big-countries.py)                                     |
+|  02 | [Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/) |    Easy    | Multiple Conditions (`&`), Boolean Indexing                                    | [LEET-02 — Recyclable and Low Fat Products.py](./LEET-02-recyclable-and-low-fat-products.py) |
+|  03 | [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)             |    Easy    | Membership Testing (`.isin()`), Bitwise NOT (`~`), `.loc[]`, `.rename()`       | [LEET-03 — Customers Who Never Order.py](./LEET-03-customers-who-never-order.py)             |
+|  04 | [Article Views I](https://leetcode.com/problems/article-views-i/)                                 |    Easy    | Boolean Masking, `.loc[]`, `.drop_duplicates()`, `.rename()`, `.sort_values()` | [LEET-04 — Article Views I.py](./LEET-04-article-views.py)                                   |
+|  05 | [Invalid Tweets](https://leetcode.com/problems/invalid-tweets/)                                   |    Easy    | String Operations, `.str.len()`, Boolean Masking, `.loc[]`                     | [LEET-05 — Invalid Tweets.py](./LEET-05-invalid-tweets.py)                                   |
+|  06 | [Calculate Special Bonus](https://leetcode.com/problems/calculate-special-bonus/)                 |    Easy    | Boolean Masking, `.str.startswith()`, Modulo, `.where()`, `.sort_values()`     | [LEET-06 — Calculate Special Bonus.py](./LEET-06-calculate-special-bonus.py)                 |
 
 **Progress: 6 / 50 — 12%**
 
@@ -79,12 +81,12 @@ This repository documents my structured solutions to **LeetCode Pandas** and dat
 ```text
 .
 ├── README.md
-├── LEET-01 — Big Countries.py
-├── LEET-02 — Recyclable and Low Fat Products.py
-├── LEET-03 — Customers Who Never Order.py
-├── LEET-04 — Article Views I.py
-├── LEET-05 — Invalid Tweets.py
-├── LEET-06 — Calculate Special Bonus.py
+├── LEET-01-big-countries.py
+├── LEET-02-recyclable-and-low-fat-products.py
+├── LEET-03-customers-who-never-order.py
+├── LEET-04-article-views.py
+├── LEET-05-invalid-tweets.py
+├── LEET-06-calculate-special-bonus.py
 └── ...
 ```
 
@@ -114,7 +116,7 @@ pip install pandas
 Execute any solution directly using Python:
 
 ```bash
-python "LEET-06 — Calculate Special Bonus.py"
+python "LEET-06-calculate-special-bonus.py"
 ```
 
 ---
