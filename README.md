@@ -4,16 +4,16 @@
 
 A structured collection of my solutions to LeetCode Pandas problems, focused on developing practical data manipulation skills using Python and Pandas.
 
-The goal is to strengthen my understanding of data filtering, transformation, string operations, sorting, and DataFrame manipulation through hands-on problem-solving.
+The goal is to strengthen my understanding of data filtering, transformation, string operations, sorting, grouping, and DataFrame manipulation through hands-on problem-solving.
 
 ---
 
 ## 📊 Progress
 
-**10 / 30 Problems Completed — 33.3%**
+**12 / 30 Problems Completed — 40.0%**
 
 ```text
-Progress: [██████░░░░░░░░░░░░░░] 33.3%
+Progress: [████████░░░░░░░░░░░░] 40.0%
 ```
 
 ---
@@ -32,19 +32,24 @@ Progress: [██████░░░░░░░░░░░░░░] 33.3%
 | 08 | [Find Users With Valid E-Mails](https://leetcode.com/problems/find-users-with-valid-e-mails/) | Easy | Regular Expressions, `.str.match()`, Boolean Masking, `.loc[]` | `LEET-08_valid_emails_solution.py` |
 | 09 | [Patients With a Condition](https://leetcode.com/problems/patients-with-a-condition/) | Easy | `.str.split()`, `.apply()`, Custom Functions, `any()`, `.startswith()`, Boolean Masking | `LEET-09_patients_with_type_i_diabetes_solution.py` |
 | 10 | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/) | Medium | `.drop_duplicates()`, `.sort_values()`, `.iloc[]`, Conditional Logic, DataFrame Construction | `LEET-10_nth_highest_salary_solution.py` |
+| 11 | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | Medium | `.drop_duplicates()`, `.sort_values()`, `.iloc[]`, Conditional Logic, Handling `None` | `LEET-11_second_highest_salary_solution.py` |
+| 12 | [Department Highest Salary](https://leetcode.com/problems/department-highest-salary/) | Medium | `.groupby()`, `.transform('max')`, Boolean Masking, `.merge()`, Column Selection, `.rename()` | `LEET-12_department_highest_salary_solution.py` |
 
 ---
 
 ## 🧠 Concepts Practiced
 
 ### 1. Data Filtering & Selection
+
 - Boolean Masking and Boolean Indexing
 - `.loc[]` and column projection
 - `.isin()` and negation with `~`
 - Combining conditions with `&` and `|`
 - Conditional filtering
+- Filtering rows based on group-level conditions
 
 ### 2. String Operations
+
 - `.str.len()`
 - `.str.startswith()`
 - `.str.split()`
@@ -55,14 +60,18 @@ Progress: [██████░░░░░░░░░░░░░░] 33.3%
 - String transformation and normalization
 
 ### 3. Data Transformation
+
 - `.where()`
 - `.apply()`
 - Custom functions
 - `any()`
 - Creating calculated columns
 - Conditional value selection
+- `.groupby()` with `.transform()`
+- Group-level aggregations and comparisons
 
 ### 4. Sorting, Deduplication & Indexing
+
 - `.drop_duplicates()`
 - `.rename()`
 - `.sort_values()`
@@ -70,12 +79,24 @@ Progress: [██████░░░░░░░░░░░░░░] 33.3%
 - `.iloc[]`
 - Handling distinct values
 - Sorting and retrieving ranked values
+- Identifying maximum values within groups
 
 ### 5. DataFrame Construction & Output
+
 - `pd.DataFrame()`
 - Dynamic column names
 - Returning the expected output schema
 - Handling missing results with `None`
+- Selecting and renaming output columns
+- Combining DataFrames with `.merge()`
+
+### 6. Data Integration & Relational Operations
+
+- Joining DataFrames using matching keys
+- Understanding relationships between tables
+- Connecting employee records with department information
+- Preserving all employees tied for the highest salary
+- Translating SQL grouping and joining logic into Pandas
 
 ---
 
@@ -94,6 +115,8 @@ pandas-leetcode-solutions/
 ├── LEET-08_valid_emails_solution.py
 ├── LEET-09_patients_with_type_i_diabetes_solution.py
 ├── LEET-10_nth_highest_salary_solution.py
+├── LEET-11_second_highest_salary_solution.py
+├── LEET-12_department_highest_salary_solution.py
 │
 └── README.md
 ```
@@ -130,7 +153,7 @@ pip install pandas
 Run a solution:
 
 ```bash
-python LEET-10_nth_highest_salary_solution.py
+python LEET-12_department_highest_salary_solution.py
 ```
 
 ---
@@ -145,6 +168,8 @@ By working through these problems, I aim to improve my ability to:
 - Write clear, readable, and maintainable Python code.
 - Apply data-cleaning and data-filtering techniques.
 - Understand the relationship between SQL operations and Pandas methods.
+- Work with grouped data, aggregations, and transformations.
+- Combine related datasets using joins and merge operations.
 - Build a strong foundation for practical ETL and data pipeline development.
 
 The repository will continue to grow toward **30 LeetCode Pandas problems**, with a focus on understanding the logic behind each solution rather than simply memorizing code.
