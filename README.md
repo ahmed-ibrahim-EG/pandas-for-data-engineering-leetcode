@@ -10,10 +10,10 @@ The goal is to strengthen my understanding of data filtering, transformation, st
 
 ## 📊 Progress
 
-**12 / 30 Problems Completed — 40.0%**
+**15 / 30 Problems Completed — 50.0%**
 
 ```text
-Progress: [████████░░░░░░░░░░░░] 40.0%
+Progress: [██████████░░░░░░░░░░] 50.0%
 ```
 
 ---
@@ -34,6 +34,9 @@ Progress: [████████░░░░░░░░░░░░] 40.0%
 | 10 | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/) | Medium | `.drop_duplicates()`, `.sort_values()`, `.iloc[]`, Conditional Logic, DataFrame Construction | `LEET-10_nth_highest_salary_solution.py` |
 | 11 | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | Medium | `.drop_duplicates()`, `.sort_values()`, `.iloc[]`, Conditional Logic, Handling `None` | `LEET-11_second_highest_salary_solution.py` |
 | 12 | [Department Highest Salary](https://leetcode.com/problems/department-highest-salary/) | Medium | `.groupby()`, `.transform('max')`, Boolean Masking, `.merge()`, Column Selection, `.rename()` | `LEET-12_department_highest_salary_solution.py` |
+| 13 | [Rank Scores](https://leetcode.com/problems/rank-scores/) | Medium | `.rank()`, Dense Ranking, `ascending=False`, `.sort_values()` | `LEET-13_rank_scores_solution.py` |
+| 14 | [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/) | Easy | `.sort_values()`, `.drop_duplicates()`, `inplace=True`, Deduplication | `LEET-14_delete_duplicate_emails_solution.py` |
+| 15 | [Rearrange Products Table](https://leetcode.com/problems/rearrange-products-table/) | Easy | `.melt()`, Wide-to-Long Transformation, `.dropna()`, `id_vars`, `var_name`, `value_name` | `LEET-15_rearrange_products_table_solution.py` |
 
 ---
 
@@ -47,6 +50,7 @@ Progress: [████████░░░░░░░░░░░░] 40.0%
 - Combining conditions with `&` and `|`
 - Conditional filtering
 - Filtering rows based on group-level conditions
+- Filtering missing values with `.dropna()`
 
 ### 2. String Operations
 
@@ -69,17 +73,22 @@ Progress: [████████░░░░░░░░░░░░] 40.0%
 - Conditional value selection
 - `.groupby()` with `.transform()`
 - Group-level aggregations and comparisons
+- `.melt()` for Wide-to-Long transformation
+- Reshaping DataFrames with `id_vars`, `var_name`, and `value_name`
 
-### 4. Sorting, Deduplication & Indexing
+### 4. Sorting, Ranking, Deduplication & Indexing
 
 - `.drop_duplicates()`
 - `.rename()`
 - `.sort_values()`
 - `.reset_index()`
 - `.iloc[]`
+- `.rank()` and dense ranking
 - Handling distinct values
 - Sorting and retrieving ranked values
 - Identifying maximum values within groups
+- Removing duplicate records while preserving the smallest ID
+- In-place DataFrame modification
 
 ### 5. DataFrame Construction & Output
 
@@ -89,6 +98,8 @@ Progress: [████████░░░░░░░░░░░░] 40.0%
 - Handling missing results with `None`
 - Selecting and renaming output columns
 - Combining DataFrames with `.merge()`
+- Reshaping data between wide and long formats
+- Handling missing values with `.dropna()`
 
 ### 6. Data Integration & Relational Operations
 
@@ -117,6 +128,9 @@ pandas-leetcode-solutions/
 ├── LEET-10_nth_highest_salary_solution.py
 ├── LEET-11_second_highest_salary_solution.py
 ├── LEET-12_department_highest_salary_solution.py
+├── LEET-13_rank_scores_solution.py
+├── LEET-14_delete_duplicate_emails_solution.py
+├── LEET-15_rearrange_products_table_solution.py
 │
 └── README.md
 ```
@@ -153,7 +167,7 @@ pip install pandas
 Run a solution:
 
 ```bash
-python LEET-12_department_highest_salary_solution.py
+python LEET-15_rearrange_products_table_solution.py
 ```
 
 ---
@@ -170,6 +184,8 @@ By working through these problems, I aim to improve my ability to:
 - Understand the relationship between SQL operations and Pandas methods.
 - Work with grouped data, aggregations, and transformations.
 - Combine related datasets using joins and merge operations.
+- Reshape datasets between wide and long formats.
+- Handle missing values and remove duplicate records.
 - Build a strong foundation for practical ETL and data pipeline development.
 
 The repository will continue to grow toward **30 LeetCode Pandas problems**, with a focus on understanding the logic behind each solution rather than simply memorizing code.
